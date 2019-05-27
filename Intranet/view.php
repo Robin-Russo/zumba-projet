@@ -15,10 +15,11 @@ function showView()
     	<form method="post" action="">
 			<label>E-mail<br>
     			<input type="mail" name="mail" required size="20"/>
-    		</label><br>
+    		</label><br><br>
     		<label>Mot de passe<br>
     			<input type="password" name="pwd" required size="20"/>
-    		</label><br>
+    		</label><br><br>
+    		<input type="submit" value="Connexion">
 		</form>
     </body>
 </html>
