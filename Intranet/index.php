@@ -4,5 +4,20 @@ require_once('model.php');
 
 require_once('view.php');
 
-//sqlConnect();
-showView();
+if($_SERVER["QUERY_STRING"]=="")
+{
+   showView();
+}
+
+if(isset($_POST['connect']))
+{
+   connectAdmin();
+}
+
+if ($_SERVER["QUERY_STRING"]=="navigation") {
+	showNavigation();
+}
+
+if ($_SERVER["QUERY_STRING"]=="admin") {
+	showAdmin();
+}
