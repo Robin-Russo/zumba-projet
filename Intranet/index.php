@@ -4,9 +4,11 @@ require_once('model.php');
 
 require_once('view.php');
 
+showHeader();
+
 if($_SERVER["QUERY_STRING"]=="")
 {
-   showView();
+   showConnect();
 }
 
 if(isset($_POST['connect']))
@@ -21,3 +23,17 @@ if ($_SERVER["QUERY_STRING"]=="navigation") {
 if ($_SERVER["QUERY_STRING"]=="admin") {
 	showAdmin();
 }
+
+if ($_SERVER["QUERY_STRING"]=="adherent") {
+	showAdherent();
+}
+
+if ($_SERVER["QUERY_STRING"]=="reservation") {
+	showReservation();
+}
+
+if ($_SERVER["QUERY_STRING"]=="verification") {
+	showVerification();
+}
+
+showFooter();

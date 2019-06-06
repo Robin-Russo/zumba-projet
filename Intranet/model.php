@@ -38,13 +38,12 @@ function connectAdmin ()
 
 		if ($_POST['mail'] == $logBDD && $_POST['pwd'] == $mdpBDD) 
 		{
-			Session_start();
+			session_start();
 			$_SESSION['loginbdd'] = $logBDD;
 			$_SESSION['mdpbdd'] = $mdpBDD;
 			$_SESSION['connect'] = 0;
 
-  			echo '<meta http-equiv="refresh" content="2;url=index.php?navigation"/>';
-  			echo "<html><center>Connexion réussie !</center></html>";
+  			echo '<meta http-equiv="refresh" content="0;url=index.php?navigation"/>';
   		}
 
   		else
