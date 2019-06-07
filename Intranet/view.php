@@ -28,6 +28,7 @@ function showConnect()
 echo '
 <h1>Association de Zumba de Bellevue</h1>
 <br><br>
+<div id="form1">
 <form method="post" action="index.php">
 	<label>E-mail<br>
 		<input type="mail" name="mail" required size="20"/>
@@ -37,6 +38,7 @@ echo '
 	</label><br><br>
 	<input type="submit" value="Connexion" name="connect">
 </form>
+</div>
 ';
 }
 
@@ -49,18 +51,23 @@ echo '
     <button type="button">
         <a href="index.php?admin">Administrateur</a>
     </button>
+    <br>
     <button type="button">
         <a href="index.php?adherent">Adhérents</a>
     </button>
+    <br>
     <button type="button">
         <a href="index.php?reservation">Réservations</a>
     </button>
+    <br>
     <button type="button">
         <a href="index.php?verification">Vérification</a>
     </button>
 </div>
 <div id="button-bot">
+<form method="post" action="index.php">
 <input type="submit" value="Déconnexion" name="disconnect">
+<form>
 </div>
 ';
 }
@@ -76,7 +83,9 @@ echo '
 <button type="button">
     <a href="index.php?navigation">Retour</a>
 </button>
+<form method="post" action="index.php">
 <input type="submit" value="Déconnexion" name="disconnect">
+<form>
 </div>
 ';
 }
@@ -92,7 +101,9 @@ echo '
 <button type="button">
     <a href="index.php?navigation">Retour</a>
 </button>
+<form method="post" action="index.php">
 <input type="submit" value="Déconnexion" name="disconnect">
+<form>
 </div>
 ';
 }
@@ -108,7 +119,9 @@ echo '
 <button type="button">
     <a href="index.php?navigation">Retour</a>
 </button>
+<form method="post" action="index.php">
 <input type="submit" value="Déconnexion" name="disconnect">
+<form>
 </div>
 ';
 }
@@ -124,7 +137,9 @@ echo '
 <button type="button">
     <a href="index.php?navigation">Retour</a>
 </button>
+<form method="post" action="index.php">
 <input type="submit" value="Déconnexion" name="disconnect">
+<form>
 </div>
 ';
 }

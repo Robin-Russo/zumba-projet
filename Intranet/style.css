@@ -1,22 +1,28 @@
 html {
+	height: 100%;
 	background-color: lightgreen;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 h1 {
 	margin: auto;
 	text-align: center;
 	font-size: 60px;
-	background-color: #1f74ec;
-	width: 60%;
+	width: 75%;
 }
 
-form {
+#form1 {
 	margin:auto;
 	margin-top: 10%;
 	text-align: center;
 	font-size: 24px;
-	width: 15%;
-	background-color: #ec971f;
+	width: 50%;
 }
 
 #menuNav {
@@ -28,14 +34,34 @@ form {
 
 #menuNav button {
 	background-color: white;
-	width: 125px;
-	height: 25px;
+	width: 200px;
+	height: 50px;
+	font-size: 24px;
 	display: inline-block;
+	margin-bottom: 10px;
+	border: 0px;
+	border-radius: 8px;
+}
+
+#menuNav button a {
+text-decoration: none;
 }
 
 #button-bot {
 	margin:auto;
-	margin-bottom: 10%;
+	position: absolute;
 	text-align: center;
-	border: solid;
+	display: inline-block;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+}
+
+#button-bot button, input {
+	background-color: white;
+	font-size: 18px;
+	width: 125px;
+	height: 35px;
+	border: 0px;
+	border-radius: 8px;
 }

@@ -11,11 +11,6 @@ if($_SERVER["QUERY_STRING"]=="")
    showConnect();
 }
 
-if(isset($_POST['connect']))
-{
-   connectAdmin();
-}
-
 if ($_SERVER["QUERY_STRING"]=="navigation") {
 	showNavigation();
 }
@@ -34,6 +29,11 @@ if ($_SERVER["QUERY_STRING"]=="reservation") {
 
 if ($_SERVER["QUERY_STRING"]=="verification") {
 	showVerification();
+}
+
+if(isset($_POST['connect']))
+{
+   connectAdmin();
 }
 
 showFooter();
